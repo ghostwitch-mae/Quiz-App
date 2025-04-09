@@ -12,20 +12,51 @@
 
 <body>
 
-    <div class="question-box">  
-        <div id="question"> 
-        <h1>Question 1 out of 10</h1> 
-        <h2>Question: A flashing red traffic light signifies that a driver should do what? </h2>  
+    <div class="orbit-container"> 
+        <div id="orbit-circle"> 
+            <div id="orbit-object"> 
+                <img src="./assets/ship.png">
+            </div>
+        </div> 
+
+        <div class="question-box"> 
+            <div id="question"> 
+                <h1>Question 1 out of 10 </h1> 
+                <h2>Question: A flashing red traffic light signifies that a driver should do what? </h2>
+            </div> 
+
+            <div id="choices"> 
+                <button>A:stop</button> 
+                <button>B:speed up</button> 
+                <button>C:proceed with caution</button> 
+                <button>D:honk the horn</button>
+            </div> 
+            <button id="next-btn">Next Question</button>
+            <h2> Time Remaining: 10:00 </h2>
         </div>
-        <div id="choices"> 
-            <button>A:stop</button> 
-            <button>B:speed up</button> 
-            <button>C:proceed with caution</button> 
-            <button>D:honk the horn</button> 
-        </div>
-     <button id="next-btn">Next Question</button>
+
+    </div>
+
+
+    <div id="bottom-left-planet"> 
+        <img src="./assets/planet-1.png" alt="bottom-left-planet"> 
     </div> 
-        
+    
+    <div id="top-right-planet">
+        <img src="./assets/planet-2.png" alt="top-right-planet">
+    </div> 
+    
+    <div id="top-left-trail"> 
+        <img src="./assets/trail-1.png"  >
+    </div> 
+
+    <div id="bottom-right-trail"> 
+        <img src="./assets/trail-2.png">
+    </div>
+
+
+
+   
 
 </body>
 </html>

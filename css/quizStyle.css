@@ -9,22 +9,76 @@ body{
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    height: 100vh;
+    height: 100vh; 
+    overflow: hidden;
 }    
 
+.orbit-container{ 
+    height:600px; 
+    width:600px;
+    border-radius: 100%;   
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+#orbit-circle{ 
+    position: absolute;
+    height: 550px; 
+    width: 550px; 
+    border: solid white 4px; 
+    border-radius:100%;  
+    z-index: -1;
+    pointer-events: none;
+    animation: rotate 7.5s linear infinite;
+} 
+
+@keyframes rotate{ 
+    0%{ 
+        transform: rotate(0deg); 
+    } 
+    100%{ 
+        transform: rotate(360deg);
+    }
+}
+
+#orbit-object{  
+    position: absolute;
+    top: 70px; 
+    pointer-events: none; 
+    z-index: 1; 
+    animation: keep 7.5s linear infinite;
+    
+} 
+
+@keyframes keep{ 
+    0%{ 
+        transform: rotate(0deg);
+    }
+
+    100%{ 
+        transform: rotate(-360deg);
+    }
+}
+ 
+#orbit-object img{ 
+    height: 100px;
+    width: 100px; 
+
+} 
 
 .question-box{ 
-    height:550px; 
-    width:550px;
-    border: solid white 4px; 
-    border-radius: 50%; 
     display: flex;   
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
     color: white; 
-    gap: 30px;  
-} 
+    gap: 30px;
+    
+}    
+
+
 
 #question{  
     display: flex; 
@@ -35,6 +89,7 @@ body{
     text-align: center;
     gap: 20px;  
 } 
+
 #question h1,h2{ 
     font-family: "audiowide"; 
     font-size: 20px;
@@ -65,10 +120,74 @@ body{
 
 }  
 
-#choices button:hover,#next-btn:hover{ 
+#choices button:hover, #next-btn:hover{ 
     background-color: #683a9c; 
     color: white;
+    cursor: pointer;
+}  
+
+
+#bottom-left-planet img, #top-right-planet img{ 
+    height: 400px; 
+    width: 500px; 
+
+
+}  
+
+#bottom-left-planet{ 
+    position:fixed; 
+    bottom:-100px; 
+    left:-200px; 
 } 
+
+#top-right-planet{ 
+    position: fixed; 
+    top:-140px; 
+    right:-200px; 
+} 
+
+
+#top-left-trail img, #bottom-right-trail img{ 
+    height: 550px; 
+    width: 400px; 
+
+    animation-duration: 5s; 
+    animation-name: glow; 
+    animation-iteration-count: infinite;
+
+}  
+
+@keyframes glow { 
+    0%{ 
+        filter: brightness(1);
+    }  
+
+    50%{ 
+        filter: brightness(1.35);
+    } 
+
+    100%{ 
+        filter: brightness(1);
+    }
+}
+
+
+#top-left-trail{ 
+    position:fixed;
+    top:-150px; 
+    left:-70px; 
+    transform: rotate(-20deg);
+}  
+
+#bottom-right-trail{ 
+    position:fixed; 
+    bottom:-150px; 
+    right:-70px; 
+    transform: rotate(-15deg);
+}
+
+
+
 
  
 

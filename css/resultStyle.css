@@ -4,48 +4,65 @@
 } 
 
 body{ 
-    background-color:#0e0327; 
-    display: flex; 
+    background-color: #0e0327;
+    display: flex;  
     flex-direction: column;
     justify-content: center; 
-    align-items: center; 
+    align-items: center;
     height: 100vh;
 }   
 
-#title{ 
-    text-align: center; 
-    color: white; 
-    font-family: "audiowide"; 
-    font-size: 50px; 
-    padding: 20px;
+.main{ 
+    border: solid white 4px; 
+    background-color: #683a9c; 
+    border-radius: 25px; 
+    height: fit-content; 
+    width: fit-content;
+    padding: 25px; 
+    gap:20px
 }
 
-#start-btn{ 
-    height:fit-content; 
-    width:fit-content; 
-    padding: 20px; 
-    font-family:"audiowide";
-    font-size: 16px;
-    color: black; 
-    background-color: white; 
-    border-radius: 20px; 
-
-    transition-duration: 0.5s; 
+#score{ 
+    text-align: center; 
+    font-family: "audiowide"; 
+    font-size: 20px; 
+    color: white;
 } 
 
-#start-btn:hover{ 
-    background-color: #683a9c; 
-    color:white;  
-    cursor: pointer;
-    scale:1.5; 
+#replay-btn{ 
+    height:fit-content; 
+    width:fit-content;; 
+    padding: 10px;;
+    font-family:"audiowide";
+    font-size: 20px;
+    color: black; 
+    background-color: white;  
+    border-color: white;
+    border-radius: 20px;  
+
+    transition-duration: 0.5s;
+} 
+
+#replay-btn:hover{ 
+    cursor:pointer; 
+    background-color:#683a9c;
+    color:white;
 }
+
+
+
+
+
+
+
+
 
 #bottom-left-planet img, #top-right-planet img{ 
     height: 400px; 
     width: 500px; 
 
 
-}   
+}  
 
 #bottom-left-planet{ 
     position:fixed; 
@@ -98,5 +115,6 @@ body{
     right:-70px; 
     transform: rotate(-15deg);
 }
+
 
 
