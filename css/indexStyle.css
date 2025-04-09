@@ -43,14 +43,14 @@ body{
     height: 400px; 
     width: 500px; 
 
-    animation-duration:60s;
+    /* animation-duration:60s;
     animation-name: rotate; 
     animation-timing-function:ease; 
-    animation-iteration-count: infinite; 
+    animation-iteration-count: infinite;  */
 
 }   
 
-@keyframes rotate{ 
+/* @keyframes rotate{ 
     0%{ 
         transform: rotateY(0deg);
     } 
@@ -60,7 +60,7 @@ body{
     }
 
 
-}
+} */
 
 #bottom-left-planet{ 
     position:fixed; 
@@ -79,7 +79,7 @@ body{
     height: 550px; 
     width: 400px; 
 
-    animation-duration: 7.5s; 
+    animation-duration: 5s; 
     animation-name: glow; 
     animation-iteration-count: infinite;
 
