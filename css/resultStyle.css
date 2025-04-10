@@ -6,27 +6,32 @@
 body{ 
     background-color: #0e0327;
     display: flex;  
-    flex-direction: column;
     justify-content: center; 
     align-items: center;
     height: 100vh;
 }   
 
-.main{ 
+.main{  
+    display: flex;  
+    justify-content:center ;  
+    align-items: center;
     border: solid white 4px; 
     background-color: #683a9c; 
     border-radius: 25px; 
-    height: fit-content; 
-    width: fit-content;
-    padding: 25px; 
-    gap:20px
+    height: 300px; 
+    width: 400px; 
+     
 }
 
 #score{ 
-    text-align: center; 
-    font-family: "audiowide"; 
-    font-size: 20px; 
-    color: white;
+     display: flex; 
+     flex-direction: column;
+     justify-content: center;
+     align-items: center; 
+     gap: 20px; 
+     font-family:"audiowide";
+     color: white;
+     
 } 
 
 #replay-btn{ 
@@ -39,7 +44,7 @@ body{
     background-color: white;  
     border-color: white;
     border-radius: 20px;  
-
+    text-decoration: none;
     transition-duration: 0.5s;
 } 
 
@@ -47,13 +52,8 @@ body{
     cursor:pointer; 
     background-color:#683a9c;
     color:white;
+    scale: 1.5;
 }
-
-
-
-
-
-
 
 
 
