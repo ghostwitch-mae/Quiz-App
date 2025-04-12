@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Function to start the timer
     function startTimer() {
-      timeLeft = 120; // Reset to 60 seconds
+      timeLeft = 600; // Reset to 60 seconds
       updateTimerDisplay();
       
       clearInterval(timer); // Clear any existing timer

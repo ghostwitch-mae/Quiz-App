@@ -34,6 +34,12 @@ body{
      
 } 
 
+#score_val{
+    color: white;
+    justify-content: center;
+    font-family: "autowide";
+}
+
 #replay-btn{ 
     height:fit-content; 
     width:fit-content;; 

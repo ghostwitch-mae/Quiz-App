@@ -4,11 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const total = sessionStorage.getItem('quizTotal') || 10;
     
     // Update the score display
-    const scoreDisplay = document.querySelector('#score h2');
+    const scoreDisplay = document.querySelector('#score_val');
     scoreDisplay.textContent = `Your score is: ${score}/${total}`;
+    console.log("score is" + score);
     
     // Optional: Add message based on score
-    const scoreTitle = document.querySelector('#score h1');
+    const scoreTitle = document.querySelector('');
     if (score === total) {
       scoreTitle.textContent = 'Perfect Score! Amazing!';
     } else if (score >= total * 0.8) {
