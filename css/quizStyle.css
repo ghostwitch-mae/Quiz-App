@@ -78,8 +78,6 @@ body{
     
 }    
 
-
-
 #question{  
     display: flex; 
     width: 80%;
@@ -89,6 +87,11 @@ body{
     text-align: center;
     gap: 20px;  
 } 
+
+#clock{
+    font-family: "audiowide"; 
+    font-size: 20px;
+}
 
 #question h1,h2{ 
     font-family: "audiowide"; 
