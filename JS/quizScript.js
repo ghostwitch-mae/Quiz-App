@@ -35,22 +35,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     // Function to fetch random questions from the server
-    async function fetchQuestions() {
-      try {
-        const response = await fetch('/questions.json');        currentQuestions = await response.json();
-        
-        // Start the quiz if questions loaded successfully
-        if (currentQuestions.length > 0) {
-          renderQuestion();
-          startTimer();
-        } else {
-          alert('Failed to load questions. Please try again.');
-        }
-      } catch (error) {
-        console.error('Error fetching questions:', error);
-        alert('Failed to load questions. Please try again.');
-      }
+    // Function to fetch random questions from the server
+async function fetchQuestions() {
+  try {
+    const response = await fetch('/questions.json');
+    const allQuestions = await response.json();
+    
+    // Randomly select 10 questions from the full set
+    const randomizedQuestions = shuffleArray(allQuestions).slice(0, 10);
+    currentQuestions = randomizedQuestions;
+    
+    // Start the quiz if questions loaded successfully
+    if (currentQuestions.length > 0) {
+      renderQuestion();
+      startTimer();
+    } else {
+      alert('Failed to load questions. Please try again.');
     }
+  } catch (error) {
+    console.error('Error fetching questions:', error);
+    alert('Failed to load questions. Please try again.');
+  }
+}
+
+// Helper function to shuffle an array (Fisher-Yates algorithm)
+function shuffleArray(array) {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
     
     // Function to render the current question
     function renderQuestion() {
