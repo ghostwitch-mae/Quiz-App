@@ -37,8 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to fetch random questions from the server
     async function fetchQuestions() {
       try {
-        const response = await fetch('/api/questions?count=10');
-        currentQuestions = await response.json();
+        const response = await fetch('/questions.json');        currentQuestions = await response.json();
         
         // Start the quiz if questions loaded successfully
         if (currentQuestions.length > 0) {
