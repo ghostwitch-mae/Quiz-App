@@ -1,5 +1,5 @@
 # Space Themed Quiz APp
-A space-themed trivia quiz application that tests your knowledge of astronomy and space science.
+A space-themed trivia quiz application that tests your knowledge.
 
 ## Features
 - Interactive space-themed quiz interface
