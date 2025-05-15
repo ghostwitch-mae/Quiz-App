@@ -6,18 +6,49 @@
 body{ 
     background-color: #0e0327;
     display: flex;  
+    flex-direction: column;
     justify-content: center; 
     align-items: center;
     height: 100vh;
     background-image: url(../assets/space.png);
 }   
 
+#result-bar{ 
+  position: absolute;         
+  top: 20px;                  
+  right: 250px;                
+  display: flex;
+  gap: 20px;
+  z-index: 10; 
+  color:white; 
+
+}  
+
+#profile-btn,#leaderboard-btn,#logOut-btn{ 
+    background-color:#0e0327; 
+    color: white; 
+    border-radius: 25px; 
+    border: solid white 2px; 
+    font-family: 'audiowide'; 
+    text-decoration: none; 
+    height: fit-content; 
+    width:fit-content ;
+    padding: 20px;
+} 
+
+#profile-btn:hover,#logOut-btn:hover,#leaderboard-btn:hover{ 
+    background-color: #683a9c; 
+    cursor:pointer; 
+    
+
+}
+
 .main{  
     display: flex;  
     justify-content:center ;  
     align-items: center;
-    border: solid white 4px; 
-    background-color: #683a9c; 
+    border: solid #b67cff 2px; 
+    box-shadow: 0 0 10px #b67cff;
     border-radius: 25px; 
     height: 300px; 
     width: 400px; 
