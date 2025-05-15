@@ -11,6 +11,7 @@ body{
     align-items: center; 
     height: 100vh; 
     overflow: hidden;
+    background-image: url(../assets/space.png);
 }    
 
 .orbit-container{ 
@@ -27,7 +28,7 @@ body{
     position: absolute;
     height: 600px; 
     width: 600px; 
-    border: solid white 4px; 
+    border: solid white 2px; 
     border-radius:100%;  
     z-index: -1;
     pointer-events: none;
@@ -151,7 +152,7 @@ body{
 } 
 
 
-#top-left-trail img, #bottom-right-trail img{ 
+#top-left-trail img, #bottom-right-naut img{ 
     height: 550px; 
     width: 400px; 
 
@@ -183,7 +184,7 @@ body{
     transform: rotate(-20deg);
 }  
 
-#bottom-right-trail{ 
+#bottom-right-naut{ 
     position:fixed; 
     bottom:-150px; 
     right:-70px; 

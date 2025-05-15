@@ -1,0 +1,152 @@
+*{ 
+    margin: 0;
+    padding:0; 
+} 
+
+body{ 
+    background-color:#0e0327; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    background-image: url(../assets/space.png);
+}  
+
+#title-cont{ 
+    display:flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+}
+
+
+.login-cont{ 
+    height: 60vh;
+    width: 20vw;
+    border: solid #b67cff 2px; 
+    box-shadow: 0 0 10px #b67cff;
+    border-radius: 25px; 
+    display:flex; 
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center; 
+    gap: 25px; 
+    padding: 20px;
+}  
+
+input{ 
+    background-color:#0e0327; 
+    height: 30px;
+    width: 180px;
+    border-radius: 25px; 
+    text-align: left; 
+    padding-left: 10px; 
+    border: solid white 2px;
+    
+}  
+
+input,textarea,select{ 
+    color: white;
+    font-family: 'audiowide';
+}
+
+::placeholder{ 
+    color: white; 
+    font-family: 'audiowide';
+}
+
+
+
+h2,h3,p{
+    color: white; 
+    text-align:center; 
+    font-family: 'audiowide';
+} 
+
+
+#logbtn-cont,#signUpbtn-cont{ 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    
+      
+} 
+
+#logbtn-cont button,#signUpbtn-cont button{ 
+    background-color:#0e0327; 
+    color: white; 
+    text-align: center;
+    height: 50px;
+    width: 180px;
+    border-radius: 25px; 
+    border: solid white 2px; 
+    font-family: 'audiowide';
+} 
+
+#logbtn-cont button:hover, #signUpbtn-cont button:hover{ 
+    background-color: #683a9c; 
+    cursor: pointer;
+}
+ 
+
+#bottom-left-planet img, #top-right-planet img{ 
+    height: 400px; 
+    width: 500px; 
+
+
+}   
+
+#bottom-left-planet{ 
+    position:fixed; 
+    bottom:-100px; 
+    left:-200px; 
+} 
+
+#top-right-planet{ 
+    position: fixed; 
+    top:-140px; 
+    right:-200px; 
+} 
+
+
+#top-left-trail img, #bottom-right-trail img{ 
+    height: 550px; 
+    width: 400px; 
+
+    animation-duration: 5s; 
+    animation-name: glow; 
+    animation-iteration-count: infinite;
+
+}  
+
+@keyframes glow { 
+    0%{ 
+        filter: brightness(1);
+    }  
+
+    50%{ 
+        filter: brightness(1.35);
+    } 
+
+    100%{ 
+        filter: brightness(1);
+    }
+}
+
+
+#top-left-trail{ 
+    position:fixed;
+    top:-150px; 
+    left:-70px; 
+    transform: rotate(-20deg);
+}  
+
+#bottom-right-trail{ 
+    position:fixed; 
+    bottom:-150px; 
+    right:-70px; 
+    transform: rotate(-15deg);
+}
+
+
