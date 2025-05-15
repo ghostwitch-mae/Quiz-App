@@ -1,0 +1,144 @@
+*{ 
+    margin: 0;
+    padding:0; 
+} 
+
+body{ 
+    background-color:#0e0327;
+    background-image: url(../assets/space.png);
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+} 
+
+#nav-cont{ 
+    display: flex; 
+    justify-content: flex-end;
+    width: 60vw;
+}
+
+#board-bar{ 
+    color: white; 
+    font-family: 'audiowide';
+    display: flex; 
+    gap:20px;
+} 
+
+#play-btn,#profile-btn,#logOut-btn{ 
+    background-color:#0e0327; 
+    color: white; 
+    border-radius: 25px; 
+    border: solid white 2px; 
+    font-family: 'audiowide'; 
+    text-decoration: none; 
+    height: fit-content; 
+    width:fit-content ;
+    padding: 20px;
+} 
+
+#play-btn:hover,#logOut-btn:hover,#profile-btn:hover{ 
+    background-color: #683a9c; 
+    cursor:pointer; 
+    
+
+}
+
+.board-cont{ 
+    border: solid #b67cff 2px; 
+    height: 75vh;
+    width: 500px;
+    border-radius: 15%;
+    box-shadow: 0 0 10px #b67cff;
+} 
+
+h1,h2,h3{ 
+    color: white;
+    font-family: 'audiowide';
+} 
+
+#board-text{ 
+    display: flex; 
+    justify-content: space-evenly;
+    margin-top: 20px;
+} 
+
+hr{ 
+    width: 90%; 
+    border: solid #b67cff 2px; 
+    box-shadow: 0 0 10px #b67cff;
+    margin: 20px;
+}
+
+.board-entry{ 
+    display: flex; 
+    justify-content: space-around;
+    margin-top: 10px;
+} 
+
+
+
+#bottom-left-planet img, #top-right-planet img{ 
+    height: 400px; 
+    width: 500px; 
+
+
+}   
+
+#bottom-left-planet{ 
+    position:fixed; 
+    bottom:-100px; 
+    left:-200px; 
+} 
+
+#top-right-planet{ 
+    position: fixed; 
+    top:-140px; 
+    right:-200px; 
+} 
+
+
+#top-left-trail img, #bottom-right-naut img{ 
+    height: 550px; 
+    width: 400px; 
+
+    animation-duration: 5s; 
+    animation-name: glow; 
+    animation-iteration-count: infinite;
+
+}  
+
+@keyframes glow { 
+    0%{ 
+        filter: brightness(1);
+    }  
+
+    50%{ 
+        filter: brightness(1.35);
+    } 
+
+    100%{ 
+        filter: brightness(1);
+    }
+}
+
+
+#top-left-trail{ 
+    position:fixed;
+    top:-150px; 
+    left:-70px; 
+    transform: rotate(-20deg);
+}  
+
+#bottom-right-naut{ 
+    position:fixed; 
+    bottom:-150px; 
+    right:-70px; 
+    transform: rotate(-15deg);
+}
+
+
+
+
