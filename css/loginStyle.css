@@ -73,7 +73,7 @@ h2,h3,p{
       
 } 
 
-#logbtn-cont button,#signUpbtn-cont button{ 
+#login-btn ,#signup-btn{ 
     background-color:#0e0327; 
     color: white; 
     text-align: center;
@@ -84,7 +84,7 @@ h2,h3,p{
     font-family: 'audiowide';
 } 
 
-#logbtn-cont button:hover, #signUpbtn-cont button:hover{ 
+#login-btn:hover, #signup-btn:hover{ 
     background-color: #683a9c; 
     cursor: pointer;
 }
